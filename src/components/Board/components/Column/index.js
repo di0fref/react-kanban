@@ -41,6 +41,7 @@ function Column({
             data-testid={`column-${children.id}`}
           >
             <div {...columnProvided.dragHandleProps}>{renderColumnHeader(children)}</div>
+			<div className="inner-kanban">
             {allowAddCard && <CardAdder column={children} onConfirm={onCardNew} />}
             <DroppableColumn droppableId={String(children.id)}>
               {children.cards.length ? (
@@ -58,6 +59,7 @@ function Column({
                 <div className='react-kanban-card-skeleton' />
               )}
             </DroppableColumn>
+			  </div>
           </div>
         )
       }}
