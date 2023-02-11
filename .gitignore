@@ -9,3 +9,4 @@ cypress/screenshots
 unit-coverage
 .projections.json
 .tool-versions
+.idea

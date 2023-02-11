@@ -1,6 +1,6 @@
 {
   "name": "@di0fref/react-kanban",
-  "version": "2.1.1",
+  "version": "2.1.6",
   "description": "Yet another Kanban/Trello board lib for React.",
   "main": "dist/index.js",
   "files": [
@@ -65,7 +65,7 @@
     "webpack-dev-server": "^3.11.3"
   },
   "scripts": {
-    "prepublishOnly": "rm -rf dist/ && NODE_ENV=production webpack --config webpack.prod.js",
+    "prepublishOnly": "rm -rf dist/index.js && NODE_ENV=production webpack --config webpack.prod.js",
     "server": "webpack-dev-server --config webpack.dev.js",
     "test": "jest",
     "jest:watch": "jest --no-coverage --watch --runInBand --notify --notifyMode always",
